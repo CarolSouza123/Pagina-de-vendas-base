@@ -21,11 +21,17 @@ export function initializeTracking() {
   window.fbq = fbq
   window._fbq = fbq
 
-  const script = document.createElement('script')
-  script.async = true
-  script.src = 'https://connect.facebook.net/en_US/fbevents.js'
-  document.head.append(script)
-
   fbq('init', tracking.metaPixelId)
   fbq('track', 'PageView')
+
+  const loadPixel = () => {
+    const script = document.createElement('script')
+    script.async = true
+    script.src = 'https://connect.facebook.net/en_US/fbevents.js'
+    document.head.append(script)
+  }
+
+  const delay = setTimeout
+  if ('requestIdleCallback' in window) window.requestIdleCallback(loadPixel, { timeout: 2500 })
+  else delay(loadPixel, 1200)
 }

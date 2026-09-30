@@ -1,4 +1,11 @@
-export type MediaItem = { src: string; alt: string; label: string; ratio: '1:1' | '2:3' | '3:2' | '3:4' }
+export type MediaItem = {
+  src: string
+  alt: string
+  label: string
+  ratio: '1:1' | '2:3' | '3:2' | '3:4'
+  srcSet?: string
+  sizes?: string
+}
 export type ProductItem = MediaItem & { eyebrow: string; title: string; description: string }
 
 export const pageContent = {
@@ -7,8 +14,9 @@ export const pageContent = {
     text: 'Oferta por tempo limitado, até',
   },
   hero: {
-    image: '/images/hero.webp',
-    imageAlt: 'Imagem da Hero',
+    image: '/images/hero-desktop.webp',
+    mobileImage: '/images/hero-mobile.webp',
+    imageAlt: 'Caixa de presente com Cápsulas Gourmet artesanais, flores secas e xícara de chá',
     headline: 'Aprenda a transformar café e chá em presentes delicados, criativos e personalizados.',
     body: 'Com ingredientes fáceis de encontrar, utensílios simples e sem precisar de experiência ou de uma cozinha profissional.',
     ctaLabel: 'Quero aprender agora',
@@ -18,24 +26,24 @@ export const pageContent = {
   results: {
     title: 'Imagine entregar um presente tão charmoso, que as pessoas nem vão acreditar que é comestível. Veja as reações de quem já passou por isso.',
     items: [
-      { src: '/images/depoimento-01.webp', alt: 'Placeholder: Depoimento 01', label: 'Depoimento 01', ratio: '2:3' as const },
-      { src: '/images/depoimento-02.webp', alt: 'Placeholder: Depoimento 02', label: 'Depoimento 02', ratio: '2:3' as const },
-      { src: '/images/depoimento-03.webp', alt: 'Placeholder: Depoimento 03', label: 'Depoimento 03', ratio: '2:3' as const },
-      { src: '/images/depoimento-04.webp', alt: 'Placeholder: Depoimento 04', label: 'Depoimento 04', ratio: '2:3' as const },
-      { src: '/images/depoimento-05.webp', alt: 'Placeholder: Depoimento 05', label: 'Depoimento 05', ratio: '2:3' as const },
+      { src: '/images/depoimento-01-optimized.webp', alt: 'Placeholder: Depoimento 01', label: 'Depoimento 01', ratio: '2:3' as const },
+      { src: '/images/depoimento-02-optimized.webp', alt: 'Placeholder: Depoimento 02', label: 'Depoimento 02', ratio: '2:3' as const },
+      { src: '/images/depoimento-03-optimized.webp', alt: 'Placeholder: Depoimento 03', label: 'Depoimento 03', ratio: '2:3' as const },
+      { src: '/images/depoimento-04-optimized.webp', alt: 'Placeholder: Depoimento 04', label: 'Depoimento 04', ratio: '2:3' as const },
+      { src: '/images/depoimento-05-optimized.webp', alt: 'Placeholder: Depoimento 05', label: 'Depoimento 05', ratio: '2:3' as const },
     ],
   },
   modulesSection: { title: '3 módulos para aprender a fazer as Cápsulas Gourmet e embalar para presente' },
   modules: [
-    { src: '/images/modulo-01.webp', alt: 'Imagem do módulo 01', label: 'Imagem do módulo 01', ratio: '1:1' as const, eyebrow: 'Módulo 01', title: 'Preparo das cápsulas', description: 'Conheça o processo de preparo e aprenda a produzir suas cápsulas de café e chá com orientações práticas, mesmo que nunca tenha feito algo parecido.' },
-    { src: '/images/modulo-02.webp', alt: 'Imagem do módulo 02', label: 'Imagem do módulo 02', ratio: '1:1' as const, eyebrow: 'Módulo 02', title: 'Formatos e personalização', description: 'Descubra diferentes formatos e decorações para transformar suas cápsulas em presentes criativos, delicados e personalizados para cada ocasião. Chá • Café • Flores • Ursinhos • Borboletas • Outros formatos' },
-    { src: '/images/modulo-03.webp', alt: 'Imagem do módulo 03', label: 'Imagem do módulo 03', ratio: '1:1' as const, eyebrow: 'Módulo 03', title: 'Acabamento e embalagem', description: 'Aprenda a dar os toques finais nas suas criações e preparar apresentações encantadoras para montar presentes e kits gourmet.' },
+    { src: '/images/modulo-01-optimized.webp', alt: 'Imagem do módulo 01', label: 'Imagem do módulo 01', ratio: '1:1' as const, eyebrow: 'Módulo 01', title: 'Preparo das cápsulas', description: 'Conheça o processo de preparo e aprenda a produzir suas cápsulas de café e chá com orientações práticas, mesmo que nunca tenha feito algo parecido.' },
+    { src: '/images/modulo-02-optimized.webp', alt: 'Imagem do módulo 02', label: 'Imagem do módulo 02', ratio: '1:1' as const, eyebrow: 'Módulo 02', title: 'Formatos e personalização', description: 'Descubra diferentes formatos e decorações para transformar suas cápsulas em presentes criativos, delicados e personalizados para cada ocasião. Chá • Café • Flores • Ursinhos • Borboletas • Outros formatos' },
+    { src: '/images/modulo-03-optimized.webp', alt: 'Imagem do módulo 03', label: 'Imagem do módulo 03', ratio: '1:1' as const, eyebrow: 'Módulo 03', title: 'Acabamento e embalagem', description: 'Aprenda a dar os toques finais nas suas criações e preparar apresentações encantadoras para montar presentes e kits gourmet.' },
   ],
   bonusesSection: { title: 'E para criar presentes ainda mais especiais, você ainda recebe 3 bônus' },
   bonuses: [
-    { src: '/images/bonus-01.webp', alt: 'Imagem do bônus 01', label: 'Imagem do bônus 01', ratio: '1:1' as const, eyebrow: 'Bônus 01', title: 'Cápsulas Gourmet Sem Açúcar', description: 'Aprenda a preparar versões sem açúcar e amplie suas possibilidades de criação com novas opções de café e chá para presentear ou oferecer aos seus clientes.', value: 'R$ 19,90' },
-    { src: '/images/bonus-02.webp', alt: 'Imagem do bônus 02', label: 'Imagem do bônus 02', ratio: '1:1' as const, eyebrow: 'Bônus 02', title: 'Cápsulas de Cristal & Latte Cremoso', description: 'Descubra novas possibilidades de formatos e combinações com cápsulas de cristal e latte cremoso, criando presentes gourmet ainda mais diferenciados.', value: 'R$ 27,90' },
-    { src: '/images/bonus-03.webp', alt: 'Imagem do bônus 03', label: 'Imagem do bônus 03', ratio: '1:1' as const, eyebrow: 'Bônus 03', title: 'Acesso à comunidade VIP no WhatsApp', description: '', value: 'R$ 47,90' },
+    { src: '/images/bonus-01-optimized.webp', alt: 'Imagem do bônus 01', label: 'Imagem do bônus 01', ratio: '1:1' as const, eyebrow: 'Bônus 01', title: 'Cápsulas Gourmet Sem Açúcar', description: 'Aprenda a preparar versões sem açúcar e amplie suas possibilidades de criação com novas opções de café e chá para presentear ou oferecer aos seus clientes.', value: 'R$ 19,90' },
+    { src: '/images/bonus-02-optimized.webp', alt: 'Imagem do bônus 02', label: 'Imagem do bônus 02', ratio: '1:1' as const, eyebrow: 'Bônus 02', title: 'Cápsulas de Cristal & Latte Cremoso', description: 'Descubra novas possibilidades de formatos e combinações com cápsulas de cristal e latte cremoso, criando presentes gourmet ainda mais diferenciados.', value: 'R$ 27,90' },
+    { src: '/images/bonus-03-optimized.webp', alt: 'Imagem do bônus 03', label: 'Imagem do bônus 03', ratio: '1:1' as const, eyebrow: 'Bônus 03', title: 'Acesso à comunidade VIP no WhatsApp', description: 'Participe de uma comunidade exclusiva para trocar ideias, tirar dúvidas e se inspirar em novas criações.', value: 'R$ 47,90' },
   ],
   offersSection: {
     title: 'Escolha o kit ideal para suas criações',
