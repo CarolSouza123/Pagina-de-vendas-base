@@ -18,7 +18,7 @@ export const pageContent = {
     mobileImage: '/images/hero-mobile.webp',
     imageAlt: 'Caixa de presente com Cápsulas Gourmet artesanais, flores secas e xícara de chá',
     headline: 'Cápsulas Gourmet de café e chá\npara presentes inesquecíveis.',
-    body: 'Aprenda a criar cápsulas em formatos de flores, corações e muito mais,\nusando ingredientes fáceis de encontrar e utensílios simples,\nmesmo que você não tenha experiência.',
+   body: 'Aprenda a criar cápsulas em formatos de flores, corações e muito mais,\ncom ingredientes fáceis de encontrar e utensílios simples,\nmesmo que você não tenha experiência.',
     ctaLabel: 'Quero aprender agora',
     securityImage: '/images/selos-seguranca-compra.svg',
     securityImageAlt: 'Selos de compra segura, satisfação garantida e privacidade protegida',
