@@ -54,7 +54,7 @@ export const pageContent = {
     simple: {
       title: 'Cápsulas Gourmet Básico',
       items: ['Preparo das cápsulas', 'Formatos e personalização', 'Acabamento e embalagem'],
-      previousPrice: 'R$ 97,00', installmentCount: 4, installmentValue: 'R$ 5,57', cashValue: 'R$ 19,90', ctaLabel: 'Quero o plano básico',
+      previousPrice: 'R$ 49,90', installmentCount: 4, installmentValue: 'R$ 5,57', cashValue: 'R$ 19,90', ctaLabel: 'Quero o plano básico',
     },
     complete: {
       badge: 'Mais vendido', title: 'Cápsulas Gourmet Completo',
@@ -66,7 +66,7 @@ export const pageContent = {
         { label: 'Cápsulas de Cristal & Latte Cremoso', value: 'R$ 27,90' },
         { label: 'Acesso à comunidade VIP no WhatsApp', value: 'R$ 47,90' },
       ],
-      previousPrice: 'R$ 194,00', installmentCount: 9, installmentValue: 'R$ 5,15', cashValue: 'R$ 37,90', ctaLabel: 'Quero a oferta completa',
+      previousPrice: 'R$ 87,90', installmentCount: 9, installmentValue: 'R$ 5,15', cashValue: 'R$ 37,90', ctaLabel: 'Quero a oferta completa',
     },
     popup: {
       eyebrow: 'Espere! Não saia ainda...',
