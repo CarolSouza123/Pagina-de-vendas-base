@@ -52,7 +52,7 @@ export const pageContent = {
   },
   offers: {
     simple: {
-      title: 'Kit Cápsulas Gourmet em Casa',
+      title: 'Cápsulas Gourmet Básico',
       items: ['Preparo das cápsulas', 'Formatos e personalização', 'Acabamento e embalagem'],
       previousPrice: 'R$ 97,00', installmentCount: 4, installmentValue: 'R$ 5,57', cashValue: 'R$ 19,90', ctaLabel: 'Quero o plano básico',
     },
