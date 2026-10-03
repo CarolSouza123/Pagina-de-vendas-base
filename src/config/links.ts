@@ -1,7 +1,7 @@
 export const links = {
   checkoutSimple: 'https://pay.cakto.com.br/37azqwc',
   checkoutComplete: 'https://pay.cakto.com.br/s8k7mz8_1133584',
-  checkoutUpgrade: 'https://pay.cakto.com.br/37azqwc',
+  checkoutUpgrade: 'https://pay.cakto.com.br/3fobr9v',
   privacy: '',
   terms: '',
   support: '',
