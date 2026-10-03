@@ -70,9 +70,9 @@ export const pageContent = {
     },
     popup: {
       eyebrow: 'Espere! Não saia ainda...',
-      message: 'Você escolheu a oferta simples. Mas existe uma condição especial antes de finalizar: em vez de ficar apenas com as 7 mágicas, você pode desbloquear agora o Combo 7 Mágicas, os 3 módulos, acesso vitalício e os 3 bônus.',
-      title: 'Oferta especial', previousPrice: 'R$ 19,90', installmentCount: 3, installmentValue: 'R$ 5,46', cashValue: 'R$ 14,90',
-      ctaLabel: 'Sim! Quero a oferta completa por R$ 14,90', secondaryLabel: 'Não, quero continuar com a oferta simples.',
+      message: 'Você escolheu a oferta simples. Mas existe uma condição especial antes de finalizar: em vez de ficar apenas com o Capsulas Gourmet simples, você pode desbloquear agora o pacote Completo, os 3 módulos, acesso vitalício e os 3 bônus.',
+      title: 'Oferta especial', previousPrice: 'R$ 37,90', installmentCount: 6, installmentValue: 'R$ 5,73', cashValue: 'R$ 29,90',
+      ctaLabel: 'Sim! Quero a oferta completa por R$ 29,90', secondaryLabel: 'Não, quero continuar com a oferta simples.',
     },
   },
   guarantee: {
